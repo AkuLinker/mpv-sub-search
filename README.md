@@ -7,7 +7,7 @@ Lua script for mpv. Allows to search subtitles with uosc interface.
 
 ## Requirements
 - **[uosc](https://github.com/tomasklaen/uosc)**
-- **ffmpeg**
+- **[ffmpeg](https://git.ffmpeg.org/ffmpeg.git)**
 
 ## Installation
 Place `sub-search.lua` in your mpv `scripts` folder.
