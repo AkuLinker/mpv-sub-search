@@ -5,6 +5,12 @@ Lua script for mpv. Allows to search subtitles with uosc interface.
 
 ![Preview](preview.gif)
 
+## Why not the built-in `select-subtitle-line`?
+mpv already ships a similar feature (`script-binding select/select-subtitle-line`, default `g-l`). This script exists because that built-in has a couple of issues:
+- It splits multi-line subtitle events into separate list entries per visual line, instead of treating each full line as one item. This fragments phrases that wrap across two lines and makes searching them unreliable.
+- It has no caching, so it re-extracts and re-parses subtitles via ffmpeg on every menu open.
+- It doesn't pauses playback while the menu is open, and has no option to change that.
+
 ## Requirements
 - **[uosc](https://github.com/tomasklaen/uosc)**
 - **[ffmpeg](https://git.ffmpeg.org/ffmpeg.git)**
