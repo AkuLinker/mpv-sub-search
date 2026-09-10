@@ -22,6 +22,7 @@ Place `sub-search.lua` in your mpv `scripts` folder.
 No keys are bound by default. Add these to your `input.conf`:
 ```
 <key> script-binding sub-search-open
+<key> script-binding sub-search-open-secondary
 ```
 ## Usage
 Press the bound key — a uosc palette opens with all subtitle lines.
